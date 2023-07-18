@@ -8,5 +8,19 @@
 // [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 // [“Russia”, “Denmark”, “Kazan”] → []
 
+void FindLessFour(string[] start, string[] finish)
+{
+    int count = 0;
+    for (int i = 0; i < start.Length; i++)
+    {
+        if (start[i].Length <= 3)
+        {
+            finish[count] = start[i];
+            count++;
+        }
+    }
+}
+
 string[] stringArrStart = new string[4] { "“Hello”", "2", "“world”", ":-)" };
 string[] stringArrFinish = new string[stringArrStart.Length];
+FindLessFour(stringArrStart, stringArrFinish);
