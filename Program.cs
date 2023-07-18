@@ -21,6 +21,16 @@ void FindLessFour(string[] start, string[] finish)
     }
 }
 
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
+
 string[] stringArrStart = new string[4] { "“Hello”", "2", "“world”", ":-)" };
 string[] stringArrFinish = new string[stringArrStart.Length];
 FindLessFour(stringArrStart, stringArrFinish);
+PrintArray(stringArrFinish);
